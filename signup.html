@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Join Naija Xclusive</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/naijaxclusive.css">
+</head>
+<body id="signupPage">
+    <script src = "js/bootstrap.min.js"></script>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="userIntro">
+                        <h3>Welcome to <a href="naijaxclusive.html">Naija Xclusive</a> </h3>
+                        <p>Guest: <a href="signup.html"> Join Naija Xclusive</a> / <a href="login.html">Login!</a> / <a href="#">Trending</a> /
+                        <a href="#">Recent</a> / <a href="#"> New</a>
+                        </p>
+                        <p>Stats: 2,166,674 members , 4,721,565 topics. <b>Date: <span id="date"></span></b></p>
+                        <input type="search" name="search" id="pageSearch"> <button class="btn btn-info btn-sm">Search</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+        <form class="form-horizontal" role="form" id="userLog">
+            <div class="form-group" >
+                <label for="firstname" class="col-sm-2 control-label"> First Name :</label>
+                <div class="col-sm-7">
+                    <input type="text" name="firstname" id="firstname" class="form-control"  placeholder="First Name" required>
+                </div>  
+            </div>
+            <div class="form-group">
+                <label for="surname" class="col-sm-2 control-label"> Surname :</label>
+                <div class="col-sm-7">
+                    <input type="text" name="surname" id="firstname" class="form-control" placeholder="Surname" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="col-sm-2 control-label"> Username :</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="NaijaXclusive" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Email" class="col-sm-2 control-label"> Email :</label>
+                <div class="col-sm-7">
+                    <input type="email" class="form-control"  placeholder="NaijaXclusive@example.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label"> Password :</label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control"  placeholder="minimum of 8 characters" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-7">
+                    <div class="checkbox">
+                        <label for="show password">
+                            <input type="checkbox"> show password
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-7">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember" id="remember"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-7">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="terms" id="remember" required> I Agree to this website <a href="#">terms and conditions</a></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-7">
+                    <button class="btn btn-success">Join Us</button>
+                </div>
+            </div>
+        </form>
+        <div role="form" id="userLog">
+            <div class="col-sm-offset-2 col-sm-7">
+                <label> Already have an account with us <a href="login.html"><button class="btn btn-danger">Sign in</button></a></label>          
+            </div>
+        </div>
+        <script src="naijaxclusive.js"></script>
+</body>
+</html>

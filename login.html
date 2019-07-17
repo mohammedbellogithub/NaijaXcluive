@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/naijaxclusive.css">
+    
+</head>
+<body id="signupPage">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="userIntro">
+                        <h3>Welcome to <a href="naijaxclusive.html">Naija Xclusive</a> </h3>
+                        <p>Guest: <a href="signup.html"> Join Naija Xclusive</a> / <a href="login.html">Login!</a> / <a href="#">Trending</a> /
+                        <a href="#">Recent</a> / <a href="#"> New</a>
+                        </p>
+                        <p>Stats: 2,166,674 members , 4,721,565 topics. <b>Date : <span id="date"></span></b>
+                        <input type="search" name="search" id="pageSearch"> <button class="btn btn-info btn-sm">Search</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+    <form id="userLog" class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="username" class="col-sm-2 control-label">Username :</label>
+            <div class="col-sm-7">
+                <input id="username" type="text" class="form-control" required>
+            </div> 
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password :</label>
+            <div class="col-sm-7">
+                <input type="password" id="password" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-7">
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+        </div>
+    </form>
+    <div role="form" id="userLog">
+    <div class="col-sm-offset-2 col-sm-7">
+        <label>Don't have an account <a href="signup.html"> <button type="submit" class="btn btn-danger">Sign up</button></a> </label>
+    </div><br>
+    <div class="col-sm-offset-2 col-sm-7">
+        <label>Having trouble logging in Contact<a href="#"> help  </a>  or <a href="#"> Forget password </a> </label>
+    </div>
+    </div>
+    <script src="naijaxclusive.js"></script>
+</body>
+</html>

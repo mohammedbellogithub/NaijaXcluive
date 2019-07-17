@@ -1,0 +1,125 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-family:tangerin;
+    background-color: bisque;
+
+}
+
+footer {
+    margin-top: 10%;
+    margin-bottom: -50px;
+    overflow-x: visible;
+}
+
+#title {
+    font-weight: 102em;
+    font-family: Pacifico ;
+    text-align: center;
+}
+#eName {
+    text-align: center;
+    font-family: Pacifico; 
+}
+#ads h5 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 200;
+}
+#description {
+    font-family: Pacifico; /* 'Dancing Script', cursive; */
+    font-size: 1.2em;
+    font-weight: lighter ;
+}
+#sidenav {
+    height: 650px;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+#sidenav ul.components {
+    padding: 20px 0;
+}
+#sidenav ul li a {
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    border: solid 1px bisque;
+}
+#sidenav ul li a:hover {
+    color : rgb(190, 173, 173);
+    text-decoration: none;
+    background-color: white;
+}
+#sidenav ul li a:active {
+    background-color: seashell;
+    color: brown;
+}
+.main {
+    padding: 20px;
+    margin-left: 250px;
+}
+.table.table-striped tr td a{
+    text-decoration: none;
+
+}
+#episodes {
+    list-style-image: url(../img/);
+    
+}
+#episodes li {
+    border : 1px solid blue;
+    padding: 20px 0;
+}
+@media  screen and (max-width: 768px) {
+    #sidenav {
+        margin-left: -250px;
+        
+    }
+    .main {
+        margin: 0%;
+        position: static;
+    }
+}
+@media screen and (max-width: 600px) {
+    #sidenav {
+        width: 100% !important;
+        margin-left:0px;
+        display: none;
+    }
+    .main {
+        margin: 0px;
+        overflow-x: visible;
+    }
+}
+
+
+
+
+
+/* .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+ }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;} 
+}
+ .main{
+margin-left: 160px;  Same as the width of the sidenav 
+padding: 0px 10px;
+visibility: hidden-xs;
+ } */

@@ -1,0 +1,277 @@
+/*
+ -------------------------------------------------------------------------------------------------------
+                                    PAGE   HEADER  
+-------------------------------------------------------------------------------------------------------
+ */
+
+
+#pageHead {
+    width: 100%;
+    height: 85px;
+    color: whitesmoke;
+    background-color: rgb(5, 54, 42);
+    margin-top: -18px;
+}
+#pageHead a:hover {
+    color: whitesmoke;
+}
+#pagebrand {
+    text-align: center;
+    font-weight: 700;
+
+}
+#sidenavToggle {
+    margin-left: 15px;
+    display: block;
+}
+#pageNav {
+    height: 50px;
+    background-color:rgb(5, 54, 42);
+}
+#pageNav .table tr  td {
+    padding-left:0px;
+    padding-right:0px;
+}
+#pageNav .table tr td a {
+    text-decoration:none;
+    display: block;
+    font-weight: 300;
+}
+#topnav {
+    height: 30px;
+    background-color: black;
+}
+#topnav .table tr  td {
+    padding-left:0px;
+    padding-right:0px;
+}
+#topnav .table tr td a {
+    text-decoration:none;
+    display: block;
+    font-weight: 300;
+}
+/* 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ */
+
+
+
+
+
+/*
+ ---------------SIDEBAR----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------SIDEBAR-----------------------SIDEBAR------------------------- 
+*/
+#sidebarRight {
+    height: 100%;;
+    width: 15%;
+    margin-bottom: 90px;
+    background-color:  rgb(5, 54, 42);
+    overflow-x:hidden;
+    position: absolute; 
+    right: 0%;
+    top: 125px;
+    z-index: 1;
+    transition: 0.7s;
+    color: whitesmoke;
+}
+#sidebarLeft {
+    height:100%;
+    width: 15%;
+    background-color: rgb(5, 54, 42);
+    margin-bottom: 90px;
+    overflow-x:hidden;
+    position: absolute;
+    top: 125px ;
+    left: 0%;
+    z-index: 1;
+}
+
+
+/* 
+----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------- 
+*/
+
+
+.wrapper #pageContent #pageIntro {
+    top: 0%;
+    margin-top: -10px;
+    text-align: center;
+    background-color: darkgrey;
+}
+#intro {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
+#ads {
+    font-weight: 400;
+    font-size: large
+}
+/* -------------------------------------------------------------------------------------------
+-------------------------------SIDEBAR RIGHT COMPONENTS-----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+ */
+#sidebarRight .sidebar.components ul {
+    margin-top: 60px;
+}
+#sidebarRight .sidebar.components .list-unstyled li {
+    background-color: rgba(200, 218, 207, 0.925);
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#sidebarRight .sidebar.components a {
+    background-color: rgb(27, 66, 39);
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#sidebarRight .sidebar.components a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+/* --------------------------------------------------------------------------------------------------------
+---------------------------------SIDEBAR LEFT   COMPONENTS---------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+#sidebarLeft .sidebar.components ul {
+    margin-top: 60px;
+}
+
+#sidebarLeft .sidebar.components .list-unstyled li {
+    background-color: rgba(200, 218, 207, 0.925);
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#sidebarLeft .sidebar.components a {
+    background-color: rgb(27, 66, 39);
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#sidebarLeft .sidebar.components a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+
+
+
+/* 
+======================================================================================================================================================================================================================
+*/
+
+
+
+
+
+
+
+/*            signup ccntent                  */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#signupPage { 
+    background-image: url(../img/naijaxclusive/signup.jpg)
+}
+#userLog {
+    margin-top: 10px;
+    color: white;
+    margin-left: 0%;
+}
+#userIntro {
+    margin-top: -10px;
+    text-align: center;
+    background-color:rgb(5, 54, 42);
+    color: white;
+}
+#userIntro  a {
+    text-decoration-color: whitesmoke;
+    
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------MEDIA QUERY-------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+    #pageToggler {
+        display: none;       
+    }
+    #sidebarRight #closenav {
+        display: none;
+    }
+    #sidebarLeft #closenav {
+        display: none;
+    }
+    .wrapper {
+        height: 100%;
+        width: 68%;
+        margin-top: 165px;
+        position: absolute;
+        margin-left: 16%;
+        margin-right: 16%;
+        margin-bottom: 40px;
+        overflow: hidden;
+        top: -35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #pageNav table tr td a {
+        font-size: x-small;
+    }
+    html {
+        overflow-x:hidden;
+    }
+    .wrapper  {
+        position: static !important ;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    
+    }
+    #sidebarRight {
+        display: none;
+        width: 40%;
+        height: 100%;
+        top: -10px;
+        position: fixed;
+    }
+    #sidebarRight #closenav {
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        margin-left: 50px;
+        color: whitesmoke;
+    }
+    #sidebarLeft {
+        display: none;
+        width: 40%;
+        height: 100%;
+        top: -10;
+        position: fixed;
+        transition: 0.5s;
+    }
+    #sidebarLeft #closenav {
+        font-size:40px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        margin-right: 50px;
+        color: whitesmoke;
+    }
+}
